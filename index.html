@@ -612,8 +612,8 @@ function formatText(s) {
     `<img src="${src}" class="passage-img" loading="lazy" onclick="openLightbox('${src}')" alt="">`);
   html = html.replace(/\[img\[([^\]]+?)\](?:\[[^\]]*\])?\]/g, (_, src) =>
     `<img src="${src}" class="passage-img" loading="lazy" onclick="openLightbox('${src}')" alt="">`);
-  html = html.replace(/\[(?:image|Image):\s*\.?\/?([^\]]+)\]/g, (_, src) =>
-    `<img src="${src}" class="passage-img" loading="lazy" onclick="openLightbox('${src}')" alt="">`);
+  html = html.replace(/\[(?:image|Image|圖|圖片|图片)[：:]\s*\.?\/?([^\]]+)\]/g, (_, src) =>
+    `<img src="${src.trim()}" class="passage-img" loading="lazy" onclick="openLightbox('${src.trim()}')" alt="">`);
   html = html.replace(/\n\n+/g, '</p><p>').replace(/\n/g, '<br>');
   return '<p>' + html + '</p>';
 }
