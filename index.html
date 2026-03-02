@@ -441,18 +441,35 @@ body {
 const CHUNK_SIZE = 60;
 const CHAR_COLORS = {};
 const GROUP_ICONS = {
-  'scene':     ['#059669', '\u{1F3AC}'],
-  'location':  ['#3b82f6', '\u{1F4CD}'],
-  'narrative': ['#6d28d9', '\u{1F4D6}'],
-  'dialogue':  ['#f59e0b', '\u{1F4AC}'],
-  'other':     ['#64748b', '\u{1F4C4}']
+  'prologue':   ['#a855f7', '\u{1F4D6}'],
+  'act1':       ['#f59e0b', '1\uFE0F\u20E3'],
+  'act2':       ['#ef4444', '2\uFE0F\u20E3'],
+  'school':     ['#059669', '\u{1F3EB}'],
+  'home':       ['#3b82f6', '\u{1F3E0}'],
+  'annie':      ['#a855f7', '\u{1F49C}'],
+  'jennifer':   ['#3b82f6', '\u{1F499}'],
+  'hotel':      ['#f59e0b', '\u{1F3E8}'],
+  'thompsons':  ['#6d28d9', '\u{1F3EC}'],
+  'evans':      ['#ec4899', '\u{1F6CD}'],
+  'freshpot':   ['#92400e', '\u2615'],
+  'gym':        ['#dc2626', '\u{1F4AA}'],
+  'town':       ['#0891b2', '\u{1F3D8}'],
+  'work':       ['#64748b', '\u{1F4BC}'],
+  'dreams':     ['#7c3aed', '\u{1F319}'],
+  'transform':  ['#f472b6', '\u2728'],
+  'characters': ['#6366f1', '\u{1F464}'],
+  'endings':    ['#ef4444', '\u{1F3C1}'],
+  'other':      ['#64748b', '\u{1F4C4}']
 };
 const GROUP_NAMES_ZH = {
-  'scene': '場景',
-  'location': '地點',
-  'narrative': '敘述',
-  'dialogue': '對話',
-  'other': '其他'
+  'prologue': '序章', 'act1': '第一幕', 'act2': '第二幕',
+  'school': '學校生活', 'home': '你的住所',
+  'annie': '安妮路線', 'jennifer': '珍妮佛路線',
+  'hotel': '飯店', 'thompsons': '湯普森百貨',
+  'evans': '埃文斯百貨', 'freshpot': '咖啡廳',
+  'gym': '健身房', 'town': '鎮區', 'work': '工作事件',
+  'dreams': '夢境與內在', 'transform': '變身事件',
+  'characters': '角色檔案', 'endings': '結局', 'other': '其他'
 };
 
 let DATA = null;
